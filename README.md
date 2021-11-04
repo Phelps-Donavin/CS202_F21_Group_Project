@@ -4,7 +4,7 @@ Project Level: Base
 
 Working Schedule:
 
-#~Group Meetings~
+#Group Meetings
 
 November 7
 November 14
