@@ -2,6 +2,10 @@
 
 Project Level: Base
 
+UI/DOXYGEN: Tania
+File Loading: Donavin
+Effects/Filters: Austin
+
 Working Schedule:
 
 #Group Meetings
