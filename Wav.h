@@ -12,10 +12,10 @@ wav_header waveHeader;
 unsigned char* buffer;
 public:
 
-void readFile(const std::string &fileName);
-//int getSampleRate;
-//int getBitsPerSample;
-//int getSoundType;
+Wav()=default;
+Wav(std::string filename);
+void read(const std::string fileName);
+void save();
 
 };
 
