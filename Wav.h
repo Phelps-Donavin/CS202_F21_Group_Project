@@ -16,7 +16,9 @@ Wav()=default;
 Wav(std::string filename);
 void read(const std::string fileName);
 void save();
-
+void displayMetaData(std::string filename);
+unsigned char* getBuffer() const;
+wav_header getwaveHeader();
 };
 
 
