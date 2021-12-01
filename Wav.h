@@ -10,8 +10,6 @@
 class Wav{
 wav_header waveHeader;
 unsigned char* buffer;
-std::vector<float> soundData; //for testing
-float maxValue; //for testing
 
 public:
 Wav()=default;
