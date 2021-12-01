@@ -2,16 +2,18 @@
 #define WAV_H
 
 #include <iostream>
-#include <string.h>
+#include <string>
 #include "wavHeader.h"
 #include <fstream>
-#include <iostream>
-#include <stdio.h>
+#include <vector>
+
 class Wav{
 wav_header waveHeader;
 unsigned char* buffer;
-public:
+std::vector<float> soundData; //for testing
+float maxValue; //for testing
 
+public:
 Wav()=default;
 Wav(std::string filename);
 void read(const std::string fileName);
