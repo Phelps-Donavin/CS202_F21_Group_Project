@@ -26,13 +26,6 @@ void UI::checkInput(){
   }
  } 
 
-void UI::PrintMetadata(Wav wav){
-    std::cout << wav.GetFileName() << std::endl;
-    std::cout << "Sample Rate: " << wav.GetSampleRate() << std::endl;
-    std::cout << "Bits Per Sample: " << wav.GetBitsPerSample() << std::endl;
-	std::cout << wav.GetStereo() << std::endl;
-}
-
 std::string UI::ProcessorOptions(){
     std::cout << "Choose Modification method:" << std::endl;
     std::cout << "1. Normalization" << std::endl;
