@@ -1,5 +1,5 @@
 audio: main.o wav.o processable.o normalization.o
-	g++ main.o wav.o processable.o normalization.o -o audio
+	g++ main.o wav.o processable.o normalization.o  -o audio
 
 main.o: main.cpp
 	g++ main.cpp -c
