@@ -39,9 +39,7 @@ std::string UI::ProcessorOptions(){
         std::cin >> selection;
     } while(selection != "1" &&
           selection != "2" && 
-          selection != "3" &&
-          selection != "4" &&
-          selection != "5");
+          selection != "3");
     return selection;
 }
 
