@@ -32,6 +32,8 @@ void Normalization::process(){
 }
 
 std::vector<float> Normalization::getNormal(){
+	std::cout << soundData[1] << std::endl<< soundData[2] << std:: endl<< soundData[3] <<std::endl;
+	std::cout<<"-------------------"<<std::endl;
 	return(soundData);
 }
 
