@@ -14,20 +14,19 @@
             displayMetaData(fileName);
         }
 /*-------------------------------------------------------------------------*/
+//this section is for processor testing. This is not final.
 		for(int i = 0; i < waveHeader.data_bytes/waveHeader.sample_alignment; i++){
 			soundData.push_back((float)buffer[i]);
-		}
 
-		for(int j = 0; j < soundData.size(); j++){
-			std::cout << soundData[j] << " ";
-			if(soundData[j] > maxValue){
-				maxValue = soundData[j];
+			if(soundData[i] > maxValue){
+				maxValue = soundData[i];
 			}
+			soundData[i] = soundData[i]/maxValue;
+			std::cout << soundData[i] << " ";
 		}
 		std::cout << std::endl;
-		std::cout << maxValue << std::endl;
 	}
-/*-------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
     void Wav::save(){
          std::ofstream file("output.wav",std::ios::binary | std::ios::out); 
          file.write((char*)&waveHeader, sizeof(wav_header));
