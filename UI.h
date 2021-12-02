@@ -5,15 +5,15 @@
 #include "processable.h"
 
 class UI {
-    std::string input = "quit";
+    
 public:
     UI() = default;
-    static void StartOption();
-    void InputFilename();
-    void checkInput();
-    static void ExitOption();
+    void StartOption();
+    std::string InputFilename();
+    bool checkInput(std::string input);
+	void InvalidFileName();
+    void ExitOption();
     static std::string ProcessorOptions();
-    static std::string OutputFileName();
-    std::string getInput() const{ return input; }
-    void setInput(std::string i) { input = i;}
+    std::string OutputFileName();
 };
+

@@ -6,27 +6,32 @@ void UI::StartOption(){
     std::cout << "To Begin with, " << std::endl;
 }
 
-void UI::InputFilename(){
+std::string UI::InputFilename(){
     std::string name;
     std::cout << "Please Enter the Name of a WAV File, or Enter \"quit\" to Exit the Program." << std::endl;
     std::cout << "Enter the WAV Filename:" << std::endl;
     std::cin >> name;
-    setInput(name);
+	return name;
+}
+
+bool UI::checkUserInput(std::string userinput){
+
+  if (userinput == "quit"){
+    return false; 
+  }
+  return true; 
+}
+
+void UI::InvalidFileName()
+{
+    std::cout << "This file does not exist." << std::endl;
 }
 
 void UI::ExitOption(){
     std::cout << "Exiting..." << std::endl;
 }
 
-void UI::checkInput(){
-  std::string i = getInput();
-  if((i) == "quit"){
-    ExitOption();
-    exit(0);
-  }
- } 
-
-std::string UI::ProcessorOptions(){
+void UI::ProcessorOptions(){
     std::cout << "Choose Modification method:" << std::endl;
     std::cout << "1. Normalization" << std::endl;
     std::cout << "2. Echo" << std::endl;
