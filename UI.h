@@ -2,7 +2,7 @@
 #include <string>
 #include <algorithm>
 #include "Wav.h"
-#include "Processor.h"
+#include "processable.h"
 
 class UI {
     std::string input = "quit";
@@ -12,7 +12,6 @@ public:
     void InputFilename();
     void checkInput();
     static void ExitOption();
-    static void PrintMetadata(Wav wav);
     static std::string ProcessorOptions();
     static std::string OutputFileName();
     std::string getInput() const{ return input; }
