@@ -1,5 +1,9 @@
 #include "normalization.h"
 
+/**
+ * @brief 
+ * 
+ */
 class Gain: public Normalization{
   std::vector<float> normalCopy;
   int gainFactor = 2; //for testing

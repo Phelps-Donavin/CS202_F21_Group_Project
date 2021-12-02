@@ -7,6 +7,10 @@
 #include <fstream>
 #include <vector>
 
+/**
+ * @brief 
+ * 
+ */
 class Wav{
 wav_header waveHeader;
 unsigned char* buffer;

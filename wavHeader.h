@@ -1,3 +1,7 @@
+/**
+ * @brief 
+ * 
+ */
 typedef struct wav_header {
     // RIFF Header
     char riff_header[4]; // Contains "RIFF"

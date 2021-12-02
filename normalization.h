@@ -5,11 +5,14 @@
 #include "Wav.h"
 #include "processable.h"
 
+/**
+ * @brief 
+ * 
+ */
 class Normalization: public Processable{
 	unsigned char* bufferCopy;
 	wav_header waveHeaderCopy;
 	std::vector<float> soundData;
-	int maxValue;
 
 public:
 	Normalization() = default;

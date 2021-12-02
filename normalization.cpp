@@ -1,10 +1,19 @@
 #include "normalization.h"
 
+/**
+ * @brief 
+ * 
+ * @param sound 
+ */
 void Normalization::getData(Wav sound){
 	bufferCopy = sound.getBuffer();
 	waveHeaderCopy = sound.getwaveHeader();
 }
 
+/**
+ * @brief 
+ * 
+ */
 void Normalization::process(){
 	std::cout << "Normalization Processor" << std::endl;
 
@@ -18,7 +27,10 @@ void Normalization::process(){
       soundData[i] = soundData[i]/maxValue;
     }
   }
-  
+  /**
+   * @brief 
+   * 
+   */
   else{ //else, loads in 8bit
 		for(int i = 0; i < waveHeaderCopy.data_bytes/waveHeaderCopy.sample_alignment; i++){
 		  soundData.push_back(bufferCopy[i]);
@@ -30,7 +42,11 @@ void Normalization::process(){
 	  }
   }
 }
-
+/**
+ * @brief 
+ * 
+ * @return std::vector<float> 
+ */
 std::vector<float> Normalization::getNormal(){
 	std::cout << soundData[1] << std::endl<< soundData[2] << std:: endl<< soundData[3] <<std::endl;
 	std::cout<<"-------------------"<<std::endl;

@@ -3,7 +3,11 @@
 #include "normalization.h"
 #include "gain.h"
 
-
+/**
+ * @brief 
+ * 
+ * @return int 
+ */
 int main(){
 
     Wav sound("yes-8-bit-mono.wav");

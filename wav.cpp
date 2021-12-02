@@ -1,9 +1,17 @@
 #include"Wav.h"
-
+/**
+ * @brief Construct a new Wav:: Wav object
+ * 
+ * @param filename 
+ */
     Wav::Wav(std::string filename){
         read(filename);
     }
-
+/**
+ * @brief 
+ * 
+ * @param fileName 
+ */
     void Wav::read(const std::string fileName) { 
         std::ifstream file(fileName,std::ios::binary | std::ios::in); 
         if(file.is_open()){ 
@@ -14,14 +22,21 @@
             displayMetaData(fileName);
         }
 	}
-
+/**
+ * @brief 
+ * 
+ */
     void Wav::save(){
          std::ofstream file("output.wav",std::ios::binary | std::ios::out); 
          file.write((char*)&waveHeader, sizeof(wav_header));
          file.write((char*)buffer, waveHeader.data_bytes); 
          file.close(); 
     }
-
+/**
+ * @brief 
+ * 
+ * @param filename 
+ */
     void Wav::displayMetaData(std::string filename){
         std::cout<<"**FILE METADATA**"<<std::endl;
         std::cout<<filename<<std::endl;
@@ -37,7 +52,11 @@
         }
 
     }
-
+/**
+ * @brief 
+ * 
+ * @return unsigned* 
+ */
     unsigned char* Wav::getBuffer() const{
         return(buffer);
     }
