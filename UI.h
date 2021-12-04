@@ -4,9 +4,7 @@
 #include "Wav.h"
 #include "processable.h"
 
-class UI {
-
-    
+class UI {  
 /**
  * @brief 
  * 
