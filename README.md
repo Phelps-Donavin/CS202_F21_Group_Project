@@ -1,30 +1,31 @@
 # CS202_F21_Group_Project
+# Group 3
 
-*REPLIT IS ONLY FOR EDITING CODE, TO RUN THE CODE, CLONE THE GIT REPO TO YOUR LOCAL MACHINE AND RUN THE EXECUTABLE :)*
-
-Project Level: Base
+Project Level: Basic 
 
 **Tasks:**
 
-Project: Tania Jaswal, Austin Ah Mau and Donavin Phelps
+Project Members: Tania Jaswal, Austin Ah Mau and Donavin Phelps
 
-UI/DOXYGEN: Tania
+UI/DOXYGEN: Tania Jaswal
 
-File Loading: Donavin
+File Loading(WAV): Donavin Phelps
 
-Effects/Filters: Austin
-
-**Group Meetings**
-
-November 7
-
-November 14
-
-November 21
-
-November 28
+Effects/Filters(Processor): Austin Ah Mau
 
 
-***Working Prototype Due: November 20th***
+**UML Diagram:**
 
-***Project Due: December 5th***
+
+
+**Issue incountered during this project:**
+
+
+
+**Challenges incountered during this project:**
+
+
+
+**Building Application:**
+
+
