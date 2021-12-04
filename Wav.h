@@ -8,13 +8,17 @@
 #include <vector>
 
 /**
- * @brief 
+ * @brief class Wav, 
  * 
  */
 class Wav{
 wav_header waveHeader;
 unsigned char* buffer;
 
+/**
+ * @brief 
+ * 
+ */
 public:
 Wav()=default;
 Wav(std::string filename);

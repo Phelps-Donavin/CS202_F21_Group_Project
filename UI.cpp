@@ -13,7 +13,7 @@ void UI::StartOption(){
 /**
  * @brief This will ask the user to enter the filename or enter "quit" to leave.
  * 
- * @return std::string it will return the filename that teh user eneters
+ * @return std::string - it will return the filename that teh user eneters
  */
 std::string UI::InputFilename(){
     std::string name;
@@ -25,9 +25,9 @@ std::string UI::InputFilename(){
 /**
  * @brief This checks the user input if they want to "quit" or not
  * 
- * @param userinput the input that the user enters in InputFilename.
- * @return true if user doesn't enter "quit"
- * @return false if user inputs "quit"
+ * @param userinput - the input that the user enters in InputFilename.
+ * @return true - if user doesn't enter "quit"
+ * @return false - if user inputs "quit"
  */
 bool UI::checkUserInput(std::string userinput){
 
@@ -80,7 +80,7 @@ void UI::ProcessorOptions(){
 /**
  * @brief asks the user to input the name of output file
  * 
- * @return std::string string of name that the user inputs
+ * @return std::string - string of name that the user inputs
  */
 std::string UI::OutputFileName() {
     std::cout << "Enter the Name of Your Output File:" << std::endl;

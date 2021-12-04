@@ -5,11 +5,12 @@
 #include "processable.h"
 
 class UI {  
-/**
- * @brief 
- * 
- */
+
 public:
+/**
+ * @brief constructors
+ * 
+ */    
     UI() = default;
     void StartOption();
     std::string InputFilename();

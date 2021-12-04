@@ -6,7 +6,7 @@
 #include "processable.h"
 
 /**
- * @brief 
+ * @brief Normalization class that inherts from the processable class.
  * 
  */
 class Normalization: public Processable{
@@ -14,6 +14,10 @@ class Normalization: public Processable{
 	wav_header waveHeaderCopy;
 	std::vector<float> soundData;
 
+/**
+ * @brief 
+ * 
+ */
 public:
 	Normalization() = default;
 	void getData(Wav sound);
