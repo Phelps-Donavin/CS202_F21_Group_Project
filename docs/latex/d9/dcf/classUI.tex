@@ -1,0 +1,74 @@
+\hypertarget{classUI}{}\section{UI Class Reference}
+\label{classUI}\index{UI@{UI}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classUI_a3cd5131e957f45588b448c5c55ed0adf}\label{classUI_a3cd5131e957f45588b448c5c55ed0adf}} 
+\hyperlink{classUI_a3cd5131e957f45588b448c5c55ed0adf}{UI} ()=default
+\begin{DoxyCompactList}\small\item\em constructors \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUI_ade684e1af6cdcc9ad9a9f4049294d5f7}\label{classUI_ade684e1af6cdcc9ad9a9f4049294d5f7}} 
+void \hyperlink{classUI_ade684e1af6cdcc9ad9a9f4049294d5f7}{Start\+Option} ()
+\begin{DoxyCompactList}\small\item\em The start option will show up at the beginning when running the file. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classUI_aac4ec5438f211612234d8f9be155eaf2}{Input\+Filename} ()
+\begin{DoxyCompactList}\small\item\em This will ask the user to enter the filename or enter \char`\"{}quit\char`\"{} to leave. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUI_a81e54c22892df22c6b67a10e4d0e58e6}\label{classUI_a81e54c22892df22c6b67a10e4d0e58e6}} 
+bool {\bfseries check\+Input} (std\+::string input)
+\item 
+\mbox{\Hypertarget{classUI_a8f4736f8a5097a1f234678ac85544b28}\label{classUI_a8f4736f8a5097a1f234678ac85544b28}} 
+void \hyperlink{classUI_a8f4736f8a5097a1f234678ac85544b28}{Invalid\+File\+Name} ()
+\begin{DoxyCompactList}\small\item\em cout a message if the file doesn\textquotesingle{}t quit \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUI_a8d1d1f3df8d204f641c085a4d3730c1b}\label{classUI_a8d1d1f3df8d204f641c085a4d3730c1b}} 
+void \hyperlink{classUI_a8d1d1f3df8d204f641c085a4d3730c1b}{Exit\+Option} ()
+\begin{DoxyCompactList}\small\item\em This option will be showed if the user chose to quit. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classUI_ad5a96cf0e114c4dac4a4d7958dd98c4a}{Output\+File\+Name} ()
+\begin{DoxyCompactList}\small\item\em asks the user to input the name of output file \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \hyperlink{classUI_a3af627515035a845a98b24d7463da5dc}{Processor\+Options} ()
+\begin{DoxyCompactList}\small\item\em This will display all the modification methods in the processor These options include-\/ normalization, Echo and gain adjustment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classUI_aac4ec5438f211612234d8f9be155eaf2}\label{classUI_aac4ec5438f211612234d8f9be155eaf2}} 
+\index{UI@{UI}!Input\+Filename@{Input\+Filename}}
+\index{Input\+Filename@{Input\+Filename}!UI@{UI}}
+\subsubsection{\texorpdfstring{Input\+Filename()}{InputFilename()}}
+{\footnotesize\ttfamily std\+::string U\+I\+::\+Input\+Filename (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This will ask the user to enter the filename or enter \char`\"{}quit\char`\"{} to leave. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string -\/ it will return the filename that teh user eneters 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUI_ad5a96cf0e114c4dac4a4d7958dd98c4a}\label{classUI_ad5a96cf0e114c4dac4a4d7958dd98c4a}} 
+\index{UI@{UI}!Output\+File\+Name@{Output\+File\+Name}}
+\index{Output\+File\+Name@{Output\+File\+Name}!UI@{UI}}
+\subsubsection{\texorpdfstring{Output\+File\+Name()}{OutputFileName()}}
+{\footnotesize\ttfamily std\+::string U\+I\+::\+Output\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+asks the user to input the name of output file 
+
+\begin{DoxyReturn}{Returns}
+std\+::string -\/ string of name that the user inputs 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUI_a3af627515035a845a98b24d7463da5dc}\label{classUI_a3af627515035a845a98b24d7463da5dc}} 
+\index{UI@{UI}!Processor\+Options@{Processor\+Options}}
+\index{Processor\+Options@{Processor\+Options}!UI@{UI}}
+\subsubsection{\texorpdfstring{Processor\+Options()}{ProcessorOptions()}}
+{\footnotesize\ttfamily void U\+I\+::\+Processor\+Options (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This will display all the modification methods in the processor These options include-\/ normalization, Echo and gain adjustment. 
+
+If the user inputs an invalid selection then it would diplay the options again.
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+U\+I.\+h\item 
+U\+I.\+cpp\end{DoxyCompactItemize}
